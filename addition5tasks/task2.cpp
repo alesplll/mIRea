@@ -7,8 +7,12 @@
 
 using namespace std;
 
-int main()
+#define int int64_t
+
+int32_t main()
 {
+    setlocale(LC_ALL, "rus");
+    ios_base::sync_with_stdio(0);
     int N;
     cout << "Enter size of the matrix: ";
     cin >> N;
