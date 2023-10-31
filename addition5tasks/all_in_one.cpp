@@ -1,4 +1,3 @@
-// task 32
 #include <bits/stdc++.h>
 #include <iostream>
 #include <fstream>

@@ -1,45 +1,47 @@
 #include <iostream>
-#include <bits/stdc++.h>
-#include <iomanip>
-#include <math.h>
-#include <string>
 #include <sstream>
-#include <iostream>
-#include <fstream>
-#include <math.h>
-#include <cstdlib>
-#include <stdlib.h>
-#include <vector>
-#include <stdexcept>
+#include <string>
 
-using namespace std;
-
-#include <iostream>
-#include <algorithm>
-using namespace std;
-bool perestanovka(int *urna, int n)
+int safeInputInt()
 {
-    for (int i = 0; i < n; ++i)
+    int number;
+    std::string input;
+
+    while (true)
     {
-        if (urna[i] == i)
+        std::getline(std::cin, input);
+        std::stringstream ss(input);
+        bool valid = true; // Флаг для проверки корректности ввода
+
+        while (ss >> number) // Чтение чисел из строки
         {
-            return true;
+            if (ss.peek() == ' ' || ss.peek() == '\t')
+            {
+                ss.ignore(); // Пропустить пробелы или табуляцию
+            }
+            else
+            {
+                valid = false; // Если не удалось прочитать число (например, символы или буквы)
+                break;
+            }
+        }
+
+        if (valid && ss.eof())
+        {
+            return number; // Возвращаем последнее успешно считанное число
+        }
+        else
+        {
+            std::cout << "Invalid input. Enter valid numbers separated by spaces. Try again: ";
+            ss.clear();
         }
     }
-    return false;
 }
 
 int main()
 {
-    int ans = 0, n = 10, fac = 3628800;
-    int urna[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    for (int i = 0; i < fac; ++i)
-    {
-        next_permutation(urna, urna + n);
-        if (perestanovka(urna, n))
-            ans++;
-    }
-    cout << ans << endl;
-
+    std::cout << "Enter numbers separated by spaces: ";
+    int num = safeInputInt();
+    std::cout << "You entered: " << num << std::endl;
     return 0;
 }
