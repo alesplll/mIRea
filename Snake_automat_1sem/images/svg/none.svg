@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="none.svg"
+   inkscape:export-filename="/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/none.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="64px"
+     inkscape:zoom="7.9421345"
+     inkscape:cx="19.830941"
+     inkscape:cy="24.74146"
+     inkscape:window-width="1920"
+     inkscape:window-height="967"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f0f0dc;fill-opacity:1;stroke:#f0dca0;stroke-width:1.55015;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:177;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect846"
+       width="15.449854"
+       height="15.449851"
+       x="0.77507502"
+       y="0.77507502" />
+    <path
+       id="path4273"
+       style="fill:#03cea4;stroke-width:1.6;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m -3.2322147,11.38164 c -0.09906,5.012972 -3.557625,5.012972 -7.8239843,5.012972 -4.266359,0 -7.724927,0 -7.62587,-5.012972 0.03777,-1.9116073 0.894246,-4.8937396 2.447418,-6.1206808 1.62442,-1.2832252 2.409162,-4.29936968 5.178452,-4.31619775 3.1119573,-0.0189103 3.6786843,2.94299715 5.3289033,4.15869845 1.77468,1.3073899 2.53615,4.1997868 2.495081,6.2781801 z"
+       sodipodi:nodetypes="sssssss" />
+  </g>
+</svg>

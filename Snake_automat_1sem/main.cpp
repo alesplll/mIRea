@@ -1,3 +1,4 @@
+/// make run
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 #include <vector>
@@ -18,9 +19,9 @@ using namespace sf;
 #define MENU_MAIN 0
 #define LIVES 3
 
-const int field_size_x = 40;
-const int field_size_y = 28;
-const int cell_size = 32;
+const int field_size_x = 14;
+const int field_size_y = 12;
+const int cell_size = 59;
 const int score_bar_height = 0;
 const int window_width = field_size_x * cell_size;
 const int window_height = field_size_y * cell_size + score_bar_height;
@@ -31,8 +32,6 @@ struct GameState
     int snake_position_y;
     int head_position_x;
     int head_position_y;
-    int enemy_position_x;
-    int enemy_position_y;
     int snake_length = 0;
     int snake_direction = SNAKE_DIRECTION_RIGHT;
     int score = 0;
@@ -62,12 +61,6 @@ Texture apple_texture;
 Sprite apple;
 Texture life_texture;
 Sprite life;
-Texture enemy_texture;
-Sprite enemy;
-Texture enemy2_texture;
-Sprite enemy2;
-Texture enemy3_texture;
-Sprite enemy3;
 Font font_score;
 Text text_score;
 Text text_record;
@@ -154,18 +147,6 @@ void add_apple()
     }
 }
 
-void add_trap()
-{
-    int trap_pos = get_random_empty_cell_trap();
-    if (trap_pos != -2)
-    {
-        if (trap_pos / field_size_x < 2)
-            game_state.field[2][trap_pos % field_size_x] = FIELD_CELL_TYPE_TRAP;
-        else
-            game_state.field[trap_pos / field_size_x][trap_pos % field_size_x] = FIELD_CELL_TYPE_TRAP;
-    }
-}
-
 void clear_field()
 {
     for (int j = 0; j < field_size_y; j++)
@@ -181,45 +162,36 @@ void clear_field()
         game_state.field[game_state.snake_position_y][game_state.snake_position_x - i] = game_state.snake_length - i;
     }
     add_apple();
-    add_trap();
 }
 
 void init_game()
 {
     srand(time(NULL));
     clear_field();
-    snake_texture.loadFromFile("Snake_automat_1sem/snake.png");
+    snake_texture.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/snake.png");
     snake.setTexture(snake_texture);
-    head_texture.loadFromFile("Snake_automat_1sem/head.png");
+    head_texture.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/head.png");
     head.setTexture(head_texture);
-    none_texture.loadFromFile("Snake_automat_1sem/none.png");
+    none_texture.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/none.png");
     none.setTexture(none_texture);
-    trap_texture.loadFromFile("Snake_automat_1sem/trap.png");
-    trap.setTexture(trap_texture);
-    apple_texture.loadFromFile("Snake_automat_1sem/apple.png");
+    apple_texture.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/apple.png");
     apple.setTexture(apple_texture);
-    life_texture.loadFromFile("Snake_automat_1sem/life.png");
+    life_texture.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/life.png");
     life.setTexture(life_texture);
-    enemy_texture.loadFromFile("Snake_automat_1sem/enemy.png");
-    enemy.setTexture(enemy_texture);
-    enemy2_texture.loadFromFile("Snake_automat_1sem/enemy.png");
-    enemy2.setTexture(enemy_texture);
-    enemy3_texture.loadFromFile("Snake_automat_1sem/enemy.png");
-    enemy3.setTexture(enemy_texture);
-    font_score.loadFromFile("Snake_automat_1sem/score.ttf");
+    font_score.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/score.ttf");
     text_score.setFont(font_score);
     text_score.setCharacterSize(36);
     text_score.setFillColor(Color::Black);
     text_record.setFont(font_score);
     text_record.setCharacterSize(36);
     text_record.setFillColor(Color::Black);
-    font_game_over.loadFromFile("Snake_automat_1sem/gameover.ttf");
+    font_game_over.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/gameover.ttf");
     text_game_over.setFont(font_game_over);
     text_game_over.setString("GAME OVER");
     text_game_over.setCharacterSize(90);
     text_game_over.setFillColor(Color::Red);
     text_game_over.setPosition((window_width - text_game_over.getLocalBounds().width) / 2, (window_height - text_game_over.getLocalBounds().height + score_bar_height) / 2);
-    font_menu.loadFromFile("Snake_automat_1sem/menu.ttf");
+    font_menu.loadFromFile("/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/menu.ttf");
     for (int i = 0; i < main_menu_items.size(); i++)
     {
         text_main_menu_items.emplace_back(Text());
@@ -233,7 +205,7 @@ void start_game()
 {
     game_state.snake_position_x = field_size_x / 2;
     game_state.snake_position_y = field_size_y / 2;
-    game_state.snake_length = 4;
+    game_state.snake_length = 3;
     game_state.snake_direction = SNAKE_DIRECTION_RIGHT;
     game_state.score = 0;
     game_started = true;
@@ -280,10 +252,6 @@ void draw_field(RenderWindow &window)
                 case FIELD_CELL_TYPE_APPLE:
                     apple.setPosition(float(i * cell_size), float(j * cell_size + score_bar_height));
                     window.draw(apple);
-                    break;
-                case FIELD_CELL_TYPE_TRAP:
-                    trap.setPosition(float(i * cell_size), float(j * cell_size + score_bar_height));
-                    window.draw(trap);
                     break;
                 default:
                     if (game_state.field[j][i] == game_state.snake_length)
@@ -332,7 +300,7 @@ void draw_score_bar(RenderWindow &window)
 
     for (int i = 0; i < lives; i++)
     {
-        life.setPosition((window_width - LIVES * 48) / 2 + i * 48, (score_bar_height - 48) / 2 + 32);
+        life.setPosition((window_width - LIVES * 59) / 2 + i * 70, (score_bar_height - 48) / 2 + 32);
         window.draw(life);
     }
 }
@@ -353,7 +321,7 @@ void draw_main_menu(RenderWindow &window)
     float const menu_item_interval = 20;
 
     float menu_item_max_width = 0;
-    float current_menu_item_offset_y = 0;
+    float current_menu_item_offset_y = -20;
     for (int i = 0; i < text_main_menu_items.size(); i++)
     {
         if (main_menu_items.at(i) == MENU_ITEM_START)
@@ -402,20 +370,6 @@ void grow_snake()
             if (game_state.field[j][i] > FIELD_CELL_TYPE_NONE)
             {
                 game_state.field[j][i]++;
-            }
-        }
-    }
-}
-
-void degrow_snake()
-{
-    for (int j = 0; j < field_size_y; j++)
-    {
-        for (int i = 0; i < field_size_x; i++)
-        {
-            if (game_state.field[j][i] > FIELD_CELL_TYPE_NONE)
-            {
-                game_state.field[j][i]--;
             }
         }
     }
@@ -475,10 +429,6 @@ void make_move()
             {
                 game_state.record = game_state.score;
             }
-            if (game_state.count % 2 == 0)
-            {
-                add_trap();
-            }
 
             break;
         case FIELD_CELL_TYPE_TRAP:
@@ -490,8 +440,6 @@ void make_move()
                 lives = 1;
                 snake_died();
             }
-            degrow_snake();
-            add_trap();
             break;
 
         default:
@@ -595,7 +543,7 @@ int main()
                                                                              : snake_direction_queue.at(0);
                     switch (event.key.code)
                     {
-                    case Keyboard::Numpad5:
+                    case Keyboard::Up:
                         if (snake_direction_last != SNAKE_DIRECTION_UP &&
                             snake_direction_last != SNAKE_DIRECTION_DOWN)
                         {
@@ -605,7 +553,7 @@ int main()
                             }
                         }
                         break;
-                    case Keyboard::Numpad3:
+                    case Keyboard::Right:
                         if (snake_direction_last != SNAKE_DIRECTION_RIGHT &&
                             snake_direction_last != SNAKE_DIRECTION_LEFT)
                         {
@@ -615,7 +563,7 @@ int main()
                             }
                         }
                         break;
-                    case Keyboard::Numpad2:
+                    case Keyboard::Down:
                         if (snake_direction_last != SNAKE_DIRECTION_DOWN &&
                             snake_direction_last != SNAKE_DIRECTION_UP)
                         {
@@ -625,7 +573,7 @@ int main()
                             }
                         }
                         break;
-                    case Keyboard::Numpad1:
+                    case Keyboard::Left:
                         if (snake_direction_last != SNAKE_DIRECTION_LEFT &&
                             snake_direction_last != SNAKE_DIRECTION_RIGHT)
                         {
@@ -667,7 +615,8 @@ int main()
                 }
             }
         }
-        window.clear(Color(183, 212, 168));
+        window.clear(Color(38, 84, 124));
+        /// window.clear(Color(183, 212, 168));
         draw_field(window);
         draw_score_bar(window);
         draw_record_bar(window);
