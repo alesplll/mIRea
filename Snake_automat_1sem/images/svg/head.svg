@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="head.svg"
-   inkscape:export-filename="/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/snake.png"
+   inkscape:export-filename="/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/head.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,9 +28,9 @@
      showgrid="false"
      units="px"
      width="64px"
-     inkscape:zoom="11.231874"
-     inkscape:cx="-42.156811"
-     inkscape:cy="6.1877473"
+     inkscape:zoom="5.6159372"
+     inkscape:cx="73.095547"
+     inkscape:cy="14.690335"
      inkscape:window-width="1920"
      inkscape:window-height="967"
      inkscape:window-x="0"
@@ -49,58 +49,72 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
+       style="fill:#ffe7ad;fill-opacity:1;stroke:#ffd470;stroke-width:3.0282;stroke-linejoin:round;stroke-miterlimit:177;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect854"
+       width="33.409996"
+       height="33.409996"
+       x="32.32214"
+       y="-3.9528873"
+       ry="5.5606289"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
        style="fill:#ffe7ad;fill-opacity:1;stroke:#ffd470;stroke-width:1.55015;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:177;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
        id="rect846"
        width="15.449854"
        height="15.449851"
-       x="0.77507502"
-       y="0.77507502"
+       x="0.73220569"
+       y="0.86877424"
        inkscape:export-filename="/home/glooma/Code/C++/mirea/Snake_automat_1sem/images/life.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
-    <path
-       id="path4273"
-       style="fill:#03cea4;stroke-width:1.6;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
-       d="m -4.5828798,11.3395 c -0.09906,5.012972 -3.557625,5.012972 -7.8239842,5.012972 -4.266359,0 -7.724927,0 -7.62587,-5.012972 0.03777,-1.9116086 0.894246,-4.8937409 2.447417,-6.1206821 1.624421,-1.2832252 2.409162,-4.29936967 5.178453,-4.31619774 3.1119572,-0.0189103 3.6786842,2.94299714 5.3289032,4.15869844 1.77468,1.3073899 2.53615,4.1997868 2.495081,6.2781814 z"
-       sodipodi:nodetypes="sssssss" />
-    <path
-       style="fill:#ef476f;fill-opacity:1;stroke:none;stroke-width:1.9351;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:177;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
-       id="path5405"
-       transform="matrix(0.81121716,0.58474501,-0.27842739,0.96045728,0,0)"
-       sodipodi:type="arc"
-       sodipodi:cx="-13.77425"
-       sodipodi:cy="19.221867"
-       sodipodi:rx="1.7085582"
-       sodipodi:ry="3.4538834"
-       sodipodi:start="0"
-       sodipodi:end="5.5045445"
-       sodipodi:arc-type="slice"
-       d="m -12.065692,19.221867 a 1.7085582,3.4538834 0 0 1 -1.378066,3.388651 1.7085582,3.4538834 0 0 1 -1.911194,-2.077696 1.7085582,3.4538834 0 0 1 0.63869,-4.192442 1.7085582,3.4538834 0 0 1 2.158281,0.455781 l -1.216269,2.425706 z" />
-    <path
-       style="fill:#ef476f;fill-opacity:1;stroke:none;stroke-width:1.9351;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:177;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
-       id="path5405-3"
-       transform="matrix(-0.81662927,0.57716258,0.28352584,0.9589646,0,0)"
-       inkscape:transform-center-x="-0.042766801"
-       inkscape:transform-center-y="0.29201226"
-       sodipodi:type="arc"
-       sodipodi:cx="11.101888"
-       sodipodi:cy="4.0949402"
-       sodipodi:rx="1.697235"
-       sodipodi:ry="3.3917744"
-       sodipodi:start="0"
-       sodipodi:end="5.6132083"
-       sodipodi:arc-type="slice"
-       d="M 12.799123,4.0949402 A 1.697235,3.3917744 0 0 1 11.384837,7.4392488 1.697235,3.3917744 0 0 1 9.4989951,5.2100142 1.697235,3.3917744 0 0 1 10.284494,1.1224245 1.697235,3.3917744 0 0 1 12.432241,1.9887569 l -1.330353,2.1061833 z" />
-    <path
-       id="rect7294"
-       style="fill:#f0f0dc;fill-opacity:1;stroke-width:3.74154;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
-       d="m -14.842774,3.0236296 c 0.275823,-0.2163917 0.584081,-0.931813 1.883386,-0.6924508 -0.711297,0.6900609 -0.887241,1.4385418 -0.670969,2.9191005 0,0 -0.523686,0.1209587 -1.212417,-2.2266497 z"
-       sodipodi:nodetypes="cccc" />
-    <path
-       id="rect7294-6"
-       style="fill:#f0f0dc;fill-opacity:1;stroke-width:3.74154;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
-       d="M -9.5073438,3.194772 C -9.7049588,2.9800034 -10.03391,2.1526721 -11.394402,2.2634542 c 0.737013,0.6834252 0.810119,1.5533296 0.593846,3.0338884 0,0 0.709125,-0.5967262 1.2932122,-2.1025706 z"
-       sodipodi:nodetypes="cccc" />
+    <g
+       id="g12547"
+       transform="matrix(-1.8597007,0,0,-1.8597007,139.66695,33.244634)"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         id="path4273"
+         style="fill:#03cea4;stroke-width:1.71606;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
+         d="m 57.073197,13.913417 c -0.105348,5.422415 -3.783446,5.422415 -8.320615,5.422415 -4.537168,0 -8.215271,0 -8.109926,-5.422415 0.04017,-2.067743 0.951009,-5.2934461 2.602768,-6.6205998 1.727532,-1.3880348 2.562085,-4.6505281 5.507158,-4.6687307 3.30949,-0.020455 3.91219,3.1833715 5.667157,4.4983673 1.887329,1.4141732 2.697134,4.5428122 2.653458,6.7909632 z"
+         sodipodi:nodetypes="sssssss" />
+      <path
+         id="path5405"
+         style="fill:#ef476f;stroke-width:1.9351;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
+         transform="matrix(0.80647124,0.59127332,-0.27409709,0.96170202,0,0)"
+         d="m 50.76564,-17.430367 c 0.180326,2.006026 -0.456805,3.937766 -1.430375,4.336806 -0.973569,0.39904 -1.922619,-0.882565 -2.130641,-2.877238 -0.208022,-1.994673 0.402109,-3.962873 1.369761,-4.418659 0.967652,-0.455786 1.934059,0.769828 2.169609,2.751535 l -1.763914,0.885293 1.763914,-0.885293 z"
+         sodipodi:nodetypes="cssscccc" />
+      <path
+         id="path5405-3"
+         style="fill:#ef476f;stroke-width:1.9351;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
+         inkscape:transform-center-x="-0.045481626"
+         inkscape:transform-center-y="0.31586312"
+         transform="matrix(-0.81197373,0.58369398,0.27912963,0.96025343,0,0)"
+         d="m -49.369895,43.467754 c 0.200143,1.961557 -0.417218,3.883986 -1.386155,4.31641 -0.968936,0.432423 -1.930383,-0.785403 -2.158727,-2.734373 -0.228344,-1.948971 0.361033,-3.906844 1.323323,-4.395995 0.962291,-0.48915 1.940892,0.671692 2.197244,2.606426 l -1.753831,0.946489 1.753831,-0.946489 z"
+         sodipodi:nodetypes="cssscccc" />
+      <path
+         id="rect7294"
+         style="fill:#f0f0dc;fill-opacity:1;stroke-width:4.01294;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
+         d="m 46.162051,4.9183331 c 0.293331,-0.2340659 0.621156,-1.0079205 2.002935,-0.7490079 -0.756447,0.7464228 -0.943559,1.5560371 -0.713559,3.1575231 0,0 -0.556927,0.1308382 -1.289376,-2.4085152 z"
+         sodipodi:nodetypes="cccc" />
+      <path
+         id="rect7294-6"
+         style="fill:#f0f0dc;fill-opacity:1;stroke-width:4.01294;stroke-linecap:square;stroke-miterlimit:177;paint-order:stroke markers fill"
+         d="M 51.83615,5.1034539 C 51.625992,4.8711436 51.27616,3.9762387 49.82931,4.0960691 c 0.783795,0.739245 0.861542,1.6802004 0.63154,3.2816864 0,0 0.754137,-0.6454648 1.3753,-2.2743016 z"
+         sodipodi:nodetypes="cccc" />
+      <path
+         id="rect26052"
+         style="fill:#f0f0dc;fill-opacity:1;stroke-width:2.17942;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+         d="m 54.430546,15.772953 c -1.743133,-2.926703 -1.732341,-2.930196 -1.02596,-6.2361044 1.409791,2.7935884 1.383313,2.7886334 1.02596,6.2361044 z"
+         sodipodi:nodetypes="ccc" />
+      <path
+         id="rect26052-2"
+         style="fill:#f0f0dc;fill-opacity:1;stroke-width:2.17942;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+         d="m 43.739927,15.875908 c 1.743133,-2.926703 1.732341,-2.930196 1.02596,-6.2361042 -1.409791,2.7935882 -1.383313,2.7886332 -1.02596,6.2361042 z"
+         sodipodi:nodetypes="ccc" />
+    </g>
     <rect
        style="fill:#03cea4;fill-opacity:1;stroke:#03be96;stroke-width:1.5615;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:177;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect13313"
@@ -129,5 +143,83 @@
        style="fill:#f0f0dc;stroke-width:6.04724;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
        d="m -8.8417389,-9.4271222 c 0.529142,0.1556648 1.731305,1.8732347 1.227078,3.4728895 -1.538145,4.879752 -3.5071761,-3.9211393 -1.227078,-3.4728895 z"
        sodipodi:nodetypes="csc" />
+    <path
+       id="rect12571"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:5.88383;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="M 49.00008,3.4134522 C 46.274839,3.5853545 45.037011,3.7866639 41.759406,2.8811885 l 2.927533,-4.9691516 c 1.831225,2.33283908 1.991768,3.9291189 4.313141,5.5014153 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-7"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:5.111;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="M 49.704672,9.0078996 C 47.337385,9.1572229 46.262143,9.3320908 43.415044,8.5455475 l 2.543008,-4.3164646 c 1.590698,2.0264259 1.730154,3.4130379 3.74662,4.7788167 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-7-5"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:4.55042;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m 49.390527,14.243729 c -2.107642,0.132947 -3.064951,0.288635 -5.59978,-0.41164 l 2.26409,-3.843034 c 1.41623,1.804167 1.540391,3.038695 3.33569,4.254674 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-7-5-6"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:4.35226;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m 48.915188,17.318099 c -2.015856,0.127157 -2.931476,0.276065 -5.355915,-0.393713 L 45.22174,14.79205 c 1.354555,1.725597 1.976332,1.363025 3.693448,2.526049 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-3"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:5.56508;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m 47.924407,1.6686219 c 2.577604,0.1625895 3.748373,0.3529933 6.848417,-0.5034286 l -2.261753,-3.8390656 -1.142026,-0.025837 c -1.177699,1.74838118 -1.551236,3.0859057 -3.444638,4.3683312 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-3-6"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:5.111;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m 48.391615,6.7638456 c 2.367288,0.1493232 3.442529,0.3241912 6.289629,-0.462352 L 52.138236,1.985029 c -1.590698,2.0264259 -1.730154,3.4130378 -3.746621,4.7788166 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-3-6-3"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:4.81171;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m 48.296598,11.397707 c 2.228666,0.140579 3.240944,0.305207 5.921326,-0.435278 L 51.823828,6.8987245 c -1.497552,1.9077642 -1.628842,3.2131795 -3.52723,4.4989825 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="rect12571-3-6-3-5"
+       style="fill:#26547c;fill-opacity:0.45858;stroke:none;stroke-width:4.40254;stroke-linejoin:round;stroke-miterlimit:177;paint-order:stroke markers fill"
+       d="m 48.560644,15.916039 c 2.039149,0.128625 2.965346,0.279254 5.417799,-0.398264 l -2.190512,-3.718142 c -1.370205,1.745534 -1.490331,2.939943 -3.227287,4.116406 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.67548px;line-height:1.25;font-family:'mickey m tfb';-inkscape-font-specification:'mickey m tfb';fill:#f0f0dc;fill-opacity:0.119624;stroke-width:1.62665"
+       x="34.615734"
+       y="38.333984"
+       id="text33482"
+       inkscape:export-filename="/home/glooma/Code/C++/mirea/snake/images/logo.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan33480"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.67548px;font-family:'OffBit Trial';-inkscape-font-specification:'OffBit Trial Bold';fill:#f0f0dc;fill-opacity:0.119624;stroke-width:1.62665"
+         x="34.615734"
+         y="38.333984">WEXEL</tspan></text>
   </g>
 </svg>
