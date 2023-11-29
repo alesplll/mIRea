@@ -103,41 +103,18 @@ double findMinimum(double A, double B)
     return (A < B) ? A : B;
 }
 
-void first() // task 32
+void first(int N) // task 32
 
 {
-    int N; // start size
-    int count = 0;
 
-    cout << "Enter size of the matrix: ";
-    cin >> N;
+    int count = 0;
     int *A = new int[N];
     cout << "Enter massive elements:" << endl;
+
     for (int i = 0; i < N; i++)
     {
-        cin >> A[i];
+        A[i] = safeInputDouble();
     }
-    /*
-    while (cin >> A[count])
-    {
-        ++count;
-        // if overloading
-        if (count >= N)
-        {
-            int newSize = N * 2;
-            int *newNumbers = new int[newSize];
-            // copying from old numbers
-            for (int i = 0; i < N; ++i)
-            {
-                newNumbers[i] = A[i];
-            }
-            delete[] A;
-            A = newNumbers;
-            N = newSize;
-        }
-    }
-    */
-
     // find minimum number
     double minPositive = INT_MAX;
     int minPositiveIndex = -1;
@@ -233,19 +210,37 @@ void first() // task 32
     cout << endl;
 
     delete[] A;
+
+    /*
+    while (cin >> A[count])
+    {
+        ++count;
+        // if overloading
+        if (count >= N)
+        {
+            int newSize = N * 2;
+            int *newNumbers = new int[newSize];
+            // copying from old numbers
+            for (int i = 0; i < N; ++i)
+            {
+                newNumbers[i] = A[i];
+            }
+            delete[] A;
+            A = newNumbers;
+            N = newSize;
+        }
+    }
+    */
 }
 
-void secound() // task 45
+void secound(int N) // task 45
 
 {
-    int N;
-    cout << "Enter size of the matrix: ";
-    cin >> N;
     int *array = new int[N];
     cout << "Enter massive elements:" << endl;
     for (int i = 0; i < N; ++i)
     {
-        cin >> array[i];
+        array[i] = safeInputDouble();
     }
 
     int count = 0;
@@ -334,16 +329,15 @@ void fourth() // task 67
     cout << "Minimun of A and D: " << minAD << endl;
 }
 
-void fifth()
+void fifth(int N)
 {
-    int n, m;
-    cout << "Enter size of massive X: ";
-    cin >> n;
-    int *x = new int[n];
+    int m;
+    int n = N;
+    int *x = new int[N];
     cout << "Enter el of X: " << endl;
     for (int i = 0; i < n; ++i)
     {
-        cin >> x[i];
+        x[i] = safeInputDouble();
     }
 
     cout << "Enter size of massive Y: ";
@@ -352,7 +346,7 @@ void fifth()
     cout << "Enter el of Y: " << endl;
     for (int i = 0; i < m; ++i)
     {
-        cin >> y[i];
+        y[i] = safeInputDouble();
     }
 
     int length = findLCS(x, y, n, m);
@@ -360,6 +354,43 @@ void fifth()
 
     delete[] x;
     delete[] y;
+}
+
+void check_1()
+{
+    int N = 0;
+
+    while (N <= 0)
+    {
+        cout << "Enter size of the matrix: ";
+        N = safeInputInt();
+    }
+    first(N);
+    cin.get();
+}
+
+void check_2()
+{
+    int N = 0;
+    while (N <= 0)
+    {
+        cout << "Enter size of the matrix: ";
+        N = safeInputInt();
+    }
+    secound(N);
+    cin.get();
+}
+
+void check_5()
+{
+    int N = 0;
+    while (N <= 0)
+    {
+        cout << "Enter size of the matrix: ";
+        N = safeInputInt();
+    }
+    fifth(N);
+    cin.get();
 }
 
 int32_t main()
@@ -370,15 +401,14 @@ int32_t main()
     {
         cout << "Enter number of a task (1-5): ";
         int t = safeInputInt();
+
         switch (t)
         {
         case 1:
-            first();
-            cin.get();
+            check_1();
             break;
         case 2:
-            secound();
-            cin.get();
+            check_2();
             break;
         case 3:
             third();
@@ -389,8 +419,7 @@ int32_t main()
             cin.get();
             break;
         case 5:
-            fifth();
-            cin.get();
+            check_5();
             break;
         default:
             cout << "This task doesnt exist. Try again." << endl;

@@ -2,6 +2,11 @@
 #include <cstdlib>
 #include <vector>
 #include <random>
+#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <cmath>
 
 using namespace std;
 using namespace sf;
@@ -768,7 +773,15 @@ int main()
 
         /// Update the window
         window.display();
-
+        std::cout << "--------NEW FIELD ---------------" << std::endl;
+        for (int t_i = 0; t_i < field_size_x; t_i++)
+        {
+            for (int t_j = 0; t_j < field_size_y; t_j++)
+            {
+                std::cout << game_state.field[t_i][t_j] << " ";
+            }
+            std::cout << endl;
+        }
         /// Delay for a short duration based on the game score
         sleep(milliseconds(150 - game_state.score * 2));
     }
