@@ -52,11 +52,9 @@ struct GameState
     int snake_length = 0;
     int snake_direction = SNAKE_DIRECTION_RIGHT;
     int score = 0;
-    int count = 0;
     int record = 0;
 };
 GameState game_state;
-
 /// Vector to store game states for rollback
 vector<GameState> game_last_states;
 
@@ -535,7 +533,6 @@ void make_move()
             game_state.score++;
             grow_snake();
             add_apple();
-            game_state.count += 1;
 
             /// Update the record if needed
             if (game_state.score > game_state.record)
