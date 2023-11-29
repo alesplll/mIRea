@@ -122,6 +122,7 @@ int get_random_empty_cell()
     }
 
     /// Generate a random target index within the range of empty cells
+    srand(static_cast<unsigned int>(time(0)));
     int target_empty_cell_index = rand() % empty_cell_count;
 
     /// Find the cell with the selected index and return its linear index
@@ -773,6 +774,7 @@ int main()
 
         /// Update the window
         window.display();
+        /*
         std::cout << "--------NEW FIELD ---------------" << std::endl;
         for (int t_i = 0; t_i < field_size_x; t_i++)
         {
@@ -782,7 +784,7 @@ int main()
             }
             std::cout << endl;
         }
-        /// Delay for a short duration based on the game score
+        */
         sleep(milliseconds(150 - game_state.score * 2));
     }
 

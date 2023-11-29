@@ -3,6 +3,7 @@
 #include <fstream>
 #include <algorithm>
 #include <cmath>
+#include <cstdlib>
 
 using namespace std;
 
@@ -279,13 +280,16 @@ void third() // task 55
         matrix[i] = new int[cols];
     }
 
+    srand(static_cast<unsigned int>(time(0)));
     cout << "Enter el of matrix " << rows << " x " << cols << ":\n";
     for (int i = 0; i < rows; ++i)
     {
         for (int j = 0; j < cols; ++j)
         {
-            cin >> matrix[i][j];
+            matrix[i][j] = rand() % 10;
+            cout << matrix[i][j] << ' ';
         }
+        cout << endl;
     }
 
     int sum = 0;
