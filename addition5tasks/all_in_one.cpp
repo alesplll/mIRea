@@ -280,8 +280,8 @@ void third() // task 55
         matrix[i] = new int[cols];
     }
 
-    srand(static_cast<unsigned int>(time(0)));
-    cout << "Enter el of matrix " << rows << " x " << cols << ":\n";
+    srand(static_cast<int>(time(0)));
+    cout << "El-s of matrix " << rows << " x " << cols << ":\n";
     for (int i = 0; i < rows; ++i)
     {
         for (int j = 0; j < cols; ++j)
